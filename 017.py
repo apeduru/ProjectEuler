@@ -50,8 +50,6 @@ def main():
 			num,sum = hundred(num,sum,words)
 		if num > 20 :
 			num, sum = ten(num,sum,words)
-		if num < 20 and num > 0:
-			num,sum = one(num,sum,words)
 		if num > 0:
 			num, sum = one(num,sum,words)
 
