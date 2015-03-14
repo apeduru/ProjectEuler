@@ -43,17 +43,15 @@ def main():
 
 	sum = 11	#sum starting at 11 to account for 1000
 	for num in range(1,1000):
-		print num
 		if num > 99 and num%100 != 0:
 			sum += words["and"]
 		if num >= 100:
 			num,sum = hundred(num,sum,words)
-		if num > 20 :
+		if num >= 20 :
 			num, sum = ten(num,sum,words)
 		if num > 0:
 			num, sum = one(num,sum,words)
 
-	print num, sum	
-
+	print sum, "letters would be used"
 if __name__ == '__main__':
 	main()
