@@ -19,9 +19,7 @@ array = []
 for a in range (2,101):
 	for b in range (2,101):
 		term = pow(a,b)
-		if (term in array):
-			continue
-		else:
+		if (term not in array):
 			array.append(term)
 
 print'The number of distinct terms in the sequence is', len(array)
