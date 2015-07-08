@@ -13,10 +13,9 @@ def palindrome(DEC,BIN):
 
 def main():	
 	sum = 0
-	for x in range(0, 1000000):
-		y = binary(x)
-		if palindrome(str(x),y):
-			sum += x
-	print("The sum of all numbers, less than one million, which are palindromic in base 10 and base 2 is ", sum)
+        for x in range(0, 1000000):
+            if palindrome(str(x),binary(x)):
+                sum += x 
+    	print"The sum of all numbers, less than one million, which are        palindromic in base 10 and base 2 is", sum
 
 main()
